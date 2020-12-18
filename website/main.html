@@ -1,0 +1,262 @@
+<!--
+<html>
+    <head>
+        <meta name="keywords" content="寶可夢卡牌遊戲,PTCG,Card,Pokemon">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>寶可夢卡牌遊戲</title>
+    </head>
+    <body>
+        版本<br>
+		<select id='versionFilter' class='blueButton' onchange='filter();'>
+			<option value=''>全部</option>
+			<option value='P'>Promo</option>
+			<option value='BT'>*BT1~BT4</option>
+			<option value='BT1'>BT1</option>
+			<option value='BT2'>BT2</option>
+			<option value='BT3'>BT3</option>
+			<option value='BT4'>BT4</option>
+			<option value='ST'>*ST1~ST6</option>
+			<option value='ST1'>ST1</option>
+			<option value='ST2'>ST2</option>
+			<option value='ST3'>ST3</option>
+			<option value='ST4'>ST4</option>
+			<option value='ST5'>ST5</option>
+			<option value='ST6'>ST6</option>
+		</select>
+		<script>$('#versionFilter').val('');</script>
+        <br>
+        
+
+
+
+        <a href='#' id='onTop'><input type='button' class='blueButton' value='▲ 回到最上 ▲' /></a>
+    </body>
+</html>
+
+-->
+
+<html>
+<head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-47874077-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-47874077-3');
+</script>
+
+<meta name="keywords" content='數碼暴龍,數碼寶貝,デジモン,デジカ,Digimon,Card,DCG' />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="description" content='2020年新數碼暴龍卡牌組工具「By 路基亞 x ルギア」'/>
+<meta name="Author" content="路基亞 x ルギア"/>
+<meta property="og:image" content="http://rugiabaku.com/dcg/images/icon.png">
+<meta name="viewport" content="width=device-width; height=device-height; initial-scale=1.0; maximum-scale=1.0; user-scalable=no;">
+
+<link rev="made" href="rugia.new2020@gmail.com">
+<link rel="shortcut icon" type="image/ico" href="images/favicon.ico"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="js/deck.js"></script>
+<script src="js/search.js"></script>
+<link rel="stylesheet" type="text/css" href="css/deckEdit.css">
+
+<script data-ad-client="ca-pub-7452950192285360" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<title>
+【數碼裝置 Digital Gear】暴龍卡 - 牌組工具
+</title>
+
+<script>
+window.onload = () => {
+  document.addEventListener('touchstart', (event) => {
+    if (event.touches.length > 1) {
+       event.preventDefault();
+    }
+  }, { passive: false });
+  
+  let lastTouchEnd = 0;
+  document.addEventListener('touchend', (event) => {
+    const now = (new Date()).getTime();
+    if (now - lastTouchEnd <= 300) {
+      event.preventDefault();
+    }
+    lastTouchEnd = now;
+  }, false);
+}
+
+
+perLoadCardList();
+
+</script>
+
+</head>
+<body>
+<script>//alert('網頁更新中');</script>
+
+<a href='#' id='onTop'><input type='button' class='blueButton' value='▲ 回到最上 ▲' /></a>
+	
+	<img src='http://rugiabaku.com/dcg/images/bg-image.jpg' style='display:none;'>
+
+	<span class='leftCol'>
+		<form action="http://rugiabaku.com/dcg/deckView" method="POST" target="_blank" id='deckViewForm'>
+			<input type='hidden' id='digitama' name='digitama'>
+			<input type='hidden' id='digimon' name='digimon'>
+			<input type='hidden' id='tamer' name='tamer'>
+			<input type='hidden' id='option' name='option'>
+			<script>$('#digitama').val('');</script>
+			<script>$('#digimon').val('');</script>
+			<script>$('#tamer').val('');</script>
+			<script>$('#option').val('');</script>
+			<button value='submit' id='deckView' class='orangeButton' style='text-align-last:center;padding:0;'>
+			查看<br>牌組</button>
+		
+			<input type='button' id='counter1' name='deck' value='牌數：0' class='orangeButton counter'>
+			<input type='button' id='counter2' name='deck' value='蛋數：0' class='orangeButton counter'>
+			<script>
+				$('#counter1').val('牌數：0');
+				$('#counter2').val('蛋數：0');
+			</script>
+		</form>
+		
+
+		
+		
+		顏色<br>
+		<select id='colorFilter' class='blueButton' onchange='filter();'>
+			<option value=''>全部</option>
+			<option value='紅'>紅</option>
+			<option value='藍'>藍</option>
+			<option value='黃'>黃</option>
+			<option value='綠'>綠</option>
+			<option value='黑'>黑</option>
+			<option value='紫'>紫</option>
+			<option value='白'>白</option>
+		</select>
+		<script>$('#colorFilter').val('');</script>
+		<br>
+		
+		卡類 / 階段<br>
+		<select id='typeFilter' class='blueButton' onchange='filter();'>
+			<option value=''>全部</option>
+			<option value='幼年期'>幼年期</option>
+			<option value='成長期'>成長期</option>
+			<option value='成熟期'>成熟期</option>
+			<option value='完全體'>完全體</option>
+			<option value='究極體'>究極體</option>
+			<option value='混合體'>混合體</option>
+			<option value='馴獸師'>馴獸師</option>
+			<option value='選項'>選項</option>
+		</select>
+		<script>$('#typeFilter').val('');</script>
+		<br>
+		
+		稀有度<br>
+		<select id='rareFilter' class='blueButton' onchange='filter();'>
+			<option value=''>全部</option>
+			<option value='SEC'>SEC</option>
+			<option value='SR'>SR</option>
+			<option value='R'>R</option>
+			<option value='U'>U</option>
+			<option value='C'>C</option>
+			<option value='P'>P</option>
+		</select>
+		<script>$('#rareFilter').val('');</script>
+		<br>
+		
+		原畫 / 異畫<br>
+		<select id='anotherFilter' class='blueButton' onchange='filter();'>
+			<option value=''>全部</option>
+			<option value='A'>原畫</option>
+			<option value='B'>異畫</option>
+		</select>
+		<script>$('#anotherFilter').val('');</script>
+		<br>
+		<br>
+		
+		<input type='button' class='orangeButton larger' value='牌組重置' style='text-align-last:center;padding:0;' onclick='reset();'>
+		<br>
+		<br>
+		
+		<form action="http://rugiabaku.com/dcg/deckSim" method="POST" target="_blank" id='deckStartForm'>
+			<input type='hidden' id='digitama2' name='digitama'>
+			<input type='hidden' id='digimon2' name='digimon'>
+			<input type='hidden' id='tamer2' name='tamer'>
+			<input type='hidden' id='option2' name='option'>
+			<script>$('#digitama2').val('');</script>
+			<script>$('#digimon2').val('');</script>
+			<script>$('#tamer2').val('');</script>
+			<script>$('#option2').val('');</script>
+			<input type='submit' id='deckSim' class='orangeButton larger' value='模擬起手' style='text-align-last:center;padding:0;'>
+		</form>
+		
+		<script>
+			$('#deckStartForm').submit(function(){
+				if($('#counter1').val() != '牌數：50'){
+					alert('牌組需要剛好50張卡');
+					return false;
+				}		
+				
+			});
+		</script>
+		
+	</span>
+	<div id='main'>
+	<span class='cardHolder showAlways ads' style='background-image:url("images/logo.png");'>
+	</span><span class='cardHolder showAlways heading' style='vertical-align:middle;'>
+		<table id='heading'>
+		<tr>
+			<td style='vertical-align:middle;'>
+				<a href='http://rugiabaku.com/dcg/search'><input type='button' class='blueButton linkButton' value='中文卡表'></a><br>
+				<a href='https://digimoncard.com/rule/'><input type='button' class='blueButton linkButton' value='官方 Q&A'></a><br>
+				<a href='http://rugiabaku.com/dcg/memory'><input type='button' class='blueButton linkButton' value='Memory工具'></a>
+			</td>
+		</tr>
+		</table>
+
+    </span>
+    		<span class='cardHolder showAlways'>
+			<ins class="adsbygoogle"
+				 style="display:block"
+				 data-ad-client="ca-pub-7452950192285360"
+				 data-ad-slot="7363321524"
+				 data-ad-formatformat="auto"
+				 data-full-width-responsive="true"></ins>
+			<script>
+				(adsbygoogle = window.adsbygoogle || []).push({});
+			</script>
+		</span><span class='cardHolder showAlways'>
+			<ins class="adsbygoogle"
+				 style="display:block"
+				 data-ad-client="ca-pub-7452950192285360"
+				 data-ad-slot="7363321524"
+				 data-ad-format="auto"
+				 data-full-width-responsive="true"></ins>
+			<script>
+				(adsbygoogle = window.adsbygoogle || []).push({});
+			</script>
+		</span><span class='cardHolder showAlways'>
+			<ins class="adsbygoogle"
+				 style="display:block"
+				 data-ad-client="ca-pub-7452950192285360"
+				 data-ad-slot="7363321524"
+				 data-ad-format="auto"
+				 data-full-width-responsive="true"></ins>
+			<script>
+				(adsbygoogle = window.adsbygoogle || []).push({});
+			</script>
+		</span>
+	</div>
+	
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-47874077-1', 'rugiabaku.com');
+  ga('send', 'pageview');
+</script>
+
+</body>
+</html>
+
