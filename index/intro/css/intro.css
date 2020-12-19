@@ -6,8 +6,8 @@ body {
 
 .content{
     background: #fff;
-    margin: 2em auto;
-	width: 45%;
+    margin: 0 30%;
+	width: 40%;
 }
 .intro{
     margin: 0 15%;
@@ -26,3 +26,16 @@ body {
 .intro .intro__pic {
     text-align : center;
 }
+
+.intro .intro__name {
+    padding-top: 30px;
+}
+
+.intro .intro__study {
+    padding-top: 30px;
+}
+
+.intro .intro__work {
+    padding-top: 30px;
+}
+
