@@ -1,0 +1,334 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>放課桌遊社</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="The Gloomy Forest">
+  <meta property="og:description" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="/images/fb_share.jpg?1604366436385">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <!--CSS-->
+  <link href="./boardgamestore/css/boardgamestore.css" rel="stylesheet">
+  <!--browser icon-->
+  <!--
+  <link rel="apple-touch-icon" sizes="180x180" href="./boardgamestore/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="./boardgamestore/images/android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./boardgamestore/images/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./boardgamestore/images/favicon-32x32.png">
+  -->
+</head>
+
+<body>
+  <div id="wrapper">
+    <!--menu bar-->
+    <header>
+      <div class="maxw_content"><a class="logo" href="#"><div style="display: none;">放課桌遊社</div></a>
+        <input type="checkbox" onchange="mobile_menu();" id="menu_button">
+        <label for="menu_button"><i></i>
+          <o></o>
+          <u></u>
+        </label>
+        <ul id="menu_bar">
+          <li><a href="javascript:void(0)" onclick="scrollToId('#about');"><i
+                class="icons icon_about"></i><span>關於我們</span></a></li>
+          <li><a href="javascript:void(0)" onclick="scrollToId('#consume');"><i
+                class="icons icon_charge"></i><span>收費方式</span></a></li>
+          <li><a href="javascript:void(0)" onclick="scrollToId('#faq');"><i
+                class="icons icon_question"></i><span>FAQ</span></a></li>
+          <li><a href="javascript:void(0)" onclick="scrollToId('#contentus');"><i
+                class="icons icon_content"></i><span>聯絡我們</span></a></li>
+          <li><a href="reservation.html"><i class="icons icon_mall"></i><span>商城/預約</span></a></li>
+        </ul>
+      </div>
+    </header>
+    <!--banner-->
+    <section class="banner" style="background-image:url(./boardgamestore/images/index_banner.jpg)"></section>
+    <!--about-->
+    <section id="about">
+      <div class="col">
+        <div class="info_content">
+          <h3>關於我們</h3><br><span
+            class="thin">據說這裡的白天是RD與PM的戰場，入夜的景色即為桌遊迷的狂想森林。陰森以「隔壁桌安靜一點」的概念，提供桌遊迷包廂式的隨心服務，讓參與的夥伴們體驗最自在的桌遊時刻。盡情放聲大哭、大笑吧！</span>
+        </div>
+      </div>
+      <div class="col mid">
+        <div class="logo head_swing_ani"></div>
+      </div>
+    </section>
+    <!--service-->
+    <section id="service">
+      <div class="flex" id="service_items">
+        <div class="col">
+          <div class="info_itmes"><span>服務項目</span></div>
+        </div>
+        <div class="col hover_animate" href="javascript:void(0);" onclick="room_box_flag(1,this);">
+          <div class="info_itmes"><i class="icon_bordgame icons"></i><br><span>桌遊</span></div>
+          <div class="hide_box"><a class="close" href="javascript:void(0);" onclick="hide_box_flag(0,this);"></a></div>
+        </div>
+        <div class="col hover_animate" href="javascript:void(0);" onclick="room_box_flag(1,this);">
+          <div class="info_itmes"><i class="icon_space icons"></i><br><span>空間</span></div>
+          <div class="hide_box"></div>
+          <div class="hide_box"><a class="close" href="javascript:void(0);" onclick="hide_box_flag(0,this);"></a></div>
+        </div>
+        <div class="col hover_animate" href="javascript:void(0);" onclick="room_box_flag(1,this);">
+          <div class="info_itmes"><i class="icon_food icons"></i><br><span>餐飲</span></div>
+          <div class="hide_box"><a class="close" href="javascript:void(0);" onclick="hide_box_flag(0,this);"></a></div>
+        </div>
+      </div>
+    </section>
+    <!--consume-->
+    <section id="consume">
+      <div class="flex" id="consume_method">
+        <div class="rooms hover_animate col" onclick="room_box_flag(1,this)" data-vision="demo_5.png">
+          <div class="room_info">
+            <div class="room_weekday flex">
+              <div class="col"><span class="day">平日</span><br><span>2H 起</span></div>
+              <div class="col"><span class="normol"></span><br><span>加時&nbsp;<span class="more"></span></span></div>
+            </div>
+            <div class="room_holiday flex">
+              <div class="col"><span class="day">假日</span><br><span>3H 起</span></div>
+              <div class="col"><span class="normol"></span><br><span>加時&nbsp;<span class="more"></span></span></div>
+            </div>
+            <div class="room_deposit flex">
+              <div class="col"><span class="day">訂金</span><br><span>50%</span></div>
+              <div class="col"><span>平日&nbsp;<span class="normol"></span><br><span>假日&nbsp;<span
+                      class="more"></span></span></div>
+            </div>
+          </div>
+          <div class="reservation">
+            <div class="reservation_text"><span class="space_name"></span><br><span
+                class="space_info"></span><br><br><span>上限<span class="limit"></span>人</span><br><br><br><a
+                class="btn full" href="reservation.html">我要預約</a></div>
+          </div>
+          <div class="info_itmes"><i class="icons space_title_a"></i><br>
+            <p class="day">犀牛戰場</p><i class="icons icon_user"></i><span>2-4</span>
+          </div>
+          <div class="other_vision flex">
+            <div class="col"></div>
+            <div class="col"><a class="close" href="javascript:void(0);" onclick="room_box_flag(0,this)"></a></div>
+          </div>
+        </div>
+        <div class="rooms hover_animate col" onclick="room_box_flag(1,this)" data-vision="demo_6.png">
+          <div class="room_info">
+            <div class="room_weekday flex">
+              <div class="col"><span class="day">平日</span><br><span>2H 起</span></div>
+              <div class="col"><span class="normol"></span><br><span>加時&nbsp;<span class="more"></span></span></div>
+            </div>
+            <div class="room_holiday flex">
+              <div class="col"><span class="day">假日</span><br><span>3H 起</span></div>
+              <div class="col"><span class="normol"></span><br><span>加時&nbsp;<span class="more"></span></span></div>
+            </div>
+            <div class="room_deposit flex">
+              <div class="col"><span class="day">訂金</span><br><span>50%</span></div>
+              <div class="col"><span>平日&nbsp;<span class="normol"></span><br><span>假日&nbsp;<span
+                      class="more"></span></span></div>
+            </div>
+          </div>
+          <div class="reservation">
+            <div class="reservation_text"><span class="space_name"></span><br><span
+                class="space_info"></span><br><br><span>上限<span class="limit"></span>人</span><br><br><br><a
+                class="btn full" href="reservation.html">我要預約</a></div>
+          </div>
+          <div class="info_itmes"><i class="icons space_title_b"></i><br>
+            <p class="day">河馬澡堂</p><i class="icons icon_user"></i><span>4-6</span>
+          </div>
+          <div class="other_vision flex">
+            <div class="col"></div>
+            <div class="col"><a class="close" href="javascript:void(0);" onclick="room_box_flag(0,this)"></a></div>
+          </div>
+        </div>
+        <div class="rooms hover_animate col" onclick="room_box_flag(1,this)" data-vision="demo_5.png">
+          <div class="room_info">
+            <div class="room_weekday flex">
+              <div class="col"><span class="day">平日</span><br><span>2H 起</span></div>
+              <div class="col"><span class="normol"></span><br><span>加時&nbsp;<span class="more"></span></span></div>
+            </div>
+            <div class="room_holiday flex">
+              <div class="col"><span class="day">假日</span><br><span>3H 起</span></div>
+              <div class="col"><span class="normol"></span><br><span>加時&nbsp;<span class="more"></span></span></div>
+            </div>
+            <div class="room_deposit flex">
+              <div class="col"><span class="day">訂金</span><br><span>50%</span></div>
+              <div class="col"><span>平日&nbsp;<span class="normol"></span><br><span>假日&nbsp;<span
+                      class="more"></span></span></div>
+            </div>
+          </div>
+          <div class="reservation">
+            <div class="reservation_text"><span class="space_name"></span><br><span
+                class="space_info"></span><br><br><span>上限<span class="limit"></span>人</span><br><br><br><a
+                class="btn full" href="reservation.html">我要預約</a></div>
+          </div>
+          <div class="info_itmes"><i class="icons space_title_c"></i><br>
+            <p class="day">貓頭鷹樹</p><i class="icons icon_user"></i><span>6-8</span>
+          </div>
+          <div class="other_vision flex">
+            <div class="col"></div>
+            <div class="col"><a class="close" href="javascript:void(0);" onclick="room_box_flag(0,this)"></a></div>
+          </div>
+        </div>
+        <div class="rooms hover_animate col" onclick="room_box_flag(1,this)" data-vision="demo_6.png">
+          <div class="room_info">
+            <div class="room_weekday flex">
+              <div class="col"><span class="day">平日</span><br><span>2H 起</span></div>
+              <div class="col"><span class="normol"></span><br><span>加時&nbsp;<span class="more"></span></span></div>
+            </div>
+            <div class="room_holiday flex">
+              <div class="col"><span class="day">假日</span><br><span>3H 起</span></div>
+              <div class="col"><span class="normol"></span><br><span>加時&nbsp;<span class="more"></span></span></div>
+            </div>
+            <div class="room_deposit flex">
+              <div class="col"><span class="day">訂金</span><br><span>50%</span></div>
+              <div class="col"><span>平日&nbsp;<span class="normol"></span><br><span>假日&nbsp;<span
+                      class="more"></span></span></div>
+            </div>
+          </div>
+          <div class="reservation">
+            <div class="reservation_text"><span class="space_name"></span><br><span
+                class="space_info"></span><br><br><span>上限<span class="limit"></span>人</span><br><br><br><a
+                class="btn full" href="reservation.html">我要預約</a></div>
+          </div>
+          <div class="info_itmes"><i class="icons space_title_d"></i><br>
+            <p class="day">兔子窩</p><i class="icons icon_user"></i><span>8-12</span>
+          </div>
+          <div class="other_vision flex">
+            <div class="col"></div>
+            <div class="col"><a class="close" href="javascript:void(0);" onclick="room_box_flag(0,this)"></a></div>
+          </div>
+        </div>
+      </div>
+      <div class="flex" id="consume_info">
+        <div class="col">
+          <!-- <div class="info_vision"></div> -->
+          <div class="flex consume_note ">
+            <div class="col time"><span>營業時間</span></div>
+            <div class="col time_info">
+              <ul>
+                <li>週一至五 16:00-22:00</li>
+                <li>週六至日 13:00-22:00</li>
+                <li>國定假日 13:00-22:00</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col" style="background: #eee;">
+          <!-- <div class="info_vision"></div> -->
+          <div class="flex consume_note">
+            <div class="col notice"><span>注意事項</span></div>
+            <div class="col notice_info">
+              <ul>
+                <li>a. 入場沒有低消，依入場時間計算</li>
+                <li>b. 店內可攜帶外食，垃圾須自行處理</li>
+                <li>c. 垃圾無法自行處理，酌收清潔費30元</li>
+                <li>d. 請愛惜遊戲，毀損桌遊須照價賠償</li>
+                <li>e. 空間禁止吸菸，煩請癮君子上樓呼吸</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--F&Q-->
+    <section id="faq">
+      <div id="faq_vision"><img class="head_swing_ani" src="images/faq_vision.png?507c2ed" alt="FAQ"></div>
+      <div id="faq_tab">
+        <div class="tab_container flex">
+          <div class="col"></div>
+          <div class="col"></div>
+        </div>
+      </div>
+    </section>
+    <!--content-->
+    <section class="flex" id="contentus">
+      <div class="col" id="content_map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3615.2817249207674!2d121.46001811500614!3d25.024511583976786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a9cd67658dcb%3A0x826f7ea755c8427f!2z5pS-6Kqy5qGM6YGK56S-!5e0!3m2!1szh-TW!2stw!4v1609572689975!5m2!1szh-TW!2stw" 
+        width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+        </iframe>
+      </div>
+      <div class="col">
+        <div class="info_content">
+          <h2 class="en">CONTACT US</h2><br><br class="pc">
+          <ul id="content_info">
+            <li style="line-height: 19px;"><i class="icon_mail icons"></i><a
+                href="mailto:taiwanafterschoolboardgameclub@gmail.com">taiwanafterschoolboardgameclub@gmail.com</a></li>
+            <li><i class="icon_phone icons"></i><span>02-2255-8295</span></li>
+            <li style="margin-bottom: 0px;"><i class="icon_location icons"></i><span>新北市板橋區雨農路17巷1號B1</span></li>
+            <li><span>（單純剪理髮廳地下室）</span></li>
+            <ul id="content_media" style="display:flex;">
+              <li><a href="https://www.facebook.com/yinsen2020/" target="_blank"><i class="icon_fb icons"></i></a></li>
+              <li><a href="https://lin.ee/Hv9z2V4" target="_blank"><i class="icon_line icons"
+                    style="height: 33px;"></i></a></li>
+              <li><a href="https://shopee.tw/yinsen2020" target="_blank"><i class="icon_shopee icons"
+                    style="height: 33px;"></i></a></li>
+            </ul>
+          </ul>
+        </div>
+      </div>
+    </section><img src="images/index_banner.png?a62ed0c" style="width:0;height:0;">
+    <div class="fix_bar customerchat" page_id="109177934220988" minimized="false"><a href="javascript:void(0);" onclick="scrollToId('#wrapper')" id="go_top"></a><a
+        href="javascript:void(0);" id="msg"></a>
+    </div>
+
+    <div class="mask"></div>
+    <!--
+    <div id="loading">
+      <div id="loading_svg">
+        <svg xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"
+          style="margin: auto; background-color: rgba(255, 255, 255, 0); display: block; background-position: initial initial; background-repeat: initial initial;"
+          width="200px" height="200px" viewbox="0 0 100 100" preserveaspectratio="xMidYMid">
+          <g transform="translate(20 50)">
+            <circle cx="0" cy="0" r="6" fill="#d04957">
+              <animatetransform attributename="transform" type="scale" begin="-0.375s" calcmode="spline"
+                keysplines="0.3 0 0.7 1;0.3 0 0.7 1" values="0;1;0" keytimes="0;0.5;1" dur="1s"
+                repeatcount="indefinite"></animatetransform>
+            </circle>
+          </g>
+          <g transform="translate(40 50)">
+            <circle cx="0" cy="0" r="6" fill="#ffc730">
+              <animatetransform attributename="transform" type="scale" begin="-0.25s" calcmode="spline"
+                keysplines="0.3 0 0.7 1;0.3 0 0.7 1" values="0;1;0" keytimes="0;0.5;1" dur="1s"
+                repeatcount="indefinite"></animatetransform>
+            </circle>
+          </g>
+          <g transform="translate(60 50)">
+            <circle cx="0" cy="0" r="6" fill="#2245b5">
+              <animatetransform attributename="transform" type="scale" begin="-0.125s" calcmode="spline"
+                keysplines="0.3 0 0.7 1;0.3 0 0.7 1" values="0;1;0" keytimes="0;0.5;1" dur="1s"
+                repeatcount="indefinite"></animatetransform>
+            </circle>
+          </g>
+          <g transform="translate(80 50)">
+            <circle cx="0" cy="0" r="6" fill="#d04957">
+              <animatetransform attributename="transform" type="scale" begin="0s" calcmode="spline"
+                keysplines="0.3 0 0.7 1;0.3 0 0.7 1" values="0;1;0" keytimes="0;0.5;1" dur="1s"
+                repeatcount="indefinite"></animatetransform>
+            </circle>
+          </g>
+        </svg>
+      </div>
+    
+      <div id="loafing_logo">
+        <div class="logo head_swing_ani"></div>
+      </div>
+    </div>
+    -->
+    <footer>
+      <div class="maxw_content" style="border-top:none;"><span>©2020 AfterSchoolBoardgameClub</span></div>
+    </footer>
+  </div>
+  
+  <script type="text/javascript" src="./js/runtime.js"></script>
+  <script type="text/javascript" src="./js/common.js"></script>
+  <script type="text/javascript" src="./js/action.js"></script>
+  <script type="text/javascript" src="./js/index.js"></script>
+</body>
+
+</html>
